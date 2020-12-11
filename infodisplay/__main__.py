@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from PyQt5.QtWidgets import QApplication
 
+from infodisplay.gui import MainWindow
+
 
 def main():
     app = QApplication([])
