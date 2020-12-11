@@ -46,9 +46,17 @@ class Menu(QWidget):
         btWeather.setStyleSheet(style_sheet)
         btWeather.clicked.connect(self.on_weather_clicked)
 
+        btQuit = QPushButton()
+        quitIcon = QIcon(ConfigMenu.ICON_QUIT)
+        btQuit.setIcon(quitIcon)
+        btQuit.setIconSize(iconSize)
+        btQuit.setStyleSheet(style_sheet)
+        btQuit.clicked.connect(self.on_quit_clicked)
+
         layout.addWidget(btHome)
         layout.addWidget(btGrill)
         layout.addWidget(btWeather)
+        layout.addWidget(btQuit)
 
         self.setLayout(layout)
 
@@ -63,3 +71,7 @@ class Menu(QWidget):
     @pyqtSlot()
     def on_weather_clicked(self):
         self.callback_menu(MenuEntry.WEATHER)
+
+    @pyqtSlot()
+    def on_quit_clicked(self):
+        self.callback_menu(MenuEntry.QUIT)

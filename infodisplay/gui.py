@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QMainWindow, QFrame
 from loguru import logger
 
 from configs.config_gui import ConfigGui
+from configs.config_menu import MenuEntry
 from infodisplay.ui.menu.menubar import Menu
 
 
@@ -91,3 +92,6 @@ class MainWindow(QMainWindow):
 
     def on_menu_clicked(self, menuId):
         logger.info(f'on_menu_clicked (menuId: {menuId})')
+        if menuId == MenuEntry.QUIT:
+            logger.info('quit clicked')
+            exit(0)
