@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-from PyQt5.QtCore import Qt
+
+from PyQt5.QtCore import Qt, pyqtSignal, pyqtSlot
 from PyQt5.QtWidgets import QMainWindow, QFrame
+from loguru import logger
 
 from configs.config_gui import ConfigGui
+from infodisplay.ui.menu.menubar import Menu
 
 
 def initMenuBar(foreGround: QFrame) -> QFrame:
@@ -62,6 +65,8 @@ class MainWindow(QMainWindow):
         self.region_menu_bar: QFrame = initMenuBar(foreGround)
         self.region_content: QFrame = initContent(foreGround)
         self.region_status_bar: QFrame = initStatusBar(foreGround)
+        #
+        self.addUiWidget()
 
     def initBackGround(self) -> QFrame:
         backGround = QFrame(self)
@@ -81,4 +86,8 @@ class MainWindow(QMainWindow):
         self.setWindowFlags(Qt.CustomizeWindowHint | Qt.FramelessWindowHint)
 
     def addUiWidget(self):
-        pass
+        callback = self.on_menu_clicked
+        Menu(callback, self.region_menu_bar)
+
+    def on_menu_clicked(self, menuId):
+        logger.info(f'on_menu_clicked (menuId: {menuId})')
