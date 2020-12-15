@@ -7,6 +7,7 @@ from loguru import logger
 from configs.config_gui import ConfigGui
 from configs.config_menu import MenuEntry
 from infodisplay.ui.menu.menubar import Menu
+from infodisplay.ui.weather.weather import Weather
 
 
 def initMenuBar(foreGround: QFrame) -> QFrame:
@@ -89,6 +90,8 @@ class MainWindow(QMainWindow):
     def addUiWidget(self):
         callback = self.on_menu_clicked
         Menu(callback, self.region_menu_bar)
+
+        Weather(self.region_content)
 
     def on_menu_clicked(self, menuId):
         logger.info(f'on_menu_clicked (menuId: {menuId})')
