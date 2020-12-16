@@ -44,8 +44,11 @@ class WeatherDataThread(QThread):
         logger.info(f'WeatherDataThread started')
         self.client.on_connect = self.on_connect_cb
         self.client.on_message = self.on_message_cb
-        self.client.connect(ConfigWeather.MQTT_HOST, ConfigWeather.MQTT_PORT)
-        self.client.loop_forever()
+        try:
+            self.client.connect(ConfigWeather.MQTT_HOST, ConfigWeather.MQTT_PORT)
+            self.client.loop_forever()
+        except Exception as e:
+            logger.error(f'Connection to weather MQTT broker on host: {ConfigWeather.MQTT_HOST} failed with error: {e}')
 
 
 class Weather(QWidget):
