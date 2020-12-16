@@ -9,7 +9,7 @@ from dataclasses import dataclass
 class ConfigWeather:
     REFRESH_TIME: int           = 1000 * 60 * 1  # TODO: check if used
     # MQTT Configuration
-    MQTT_PORT: int              = 1833   # default port
+    MQTT_PORT: int              = 1883   # default port
     MQTT_HOST: str              = 'rp3'  # host name of the broker
     MQTT_BASE_TOPIC: str        = 'infoscreens'
     MQTT_TOPIC: str             = 'weather'
