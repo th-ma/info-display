@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-from PyQt5.QtWidgets import QWidget, QLabel
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFontMetrics
+from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QHBoxLayout, QVBoxLayout
 from loguru import logger
 
-from configs.config_weather import ConfigWeather
+from configs.config_weather import ConfigWeather, lblHeader, lblText
 from infodisplay.ui.weather.weather_thread import WeatherDataThread
+from infodisplay.utils.file_utils import get_dict_from_json_file
 
 
 class Weather(QWidget):
@@ -19,7 +22,48 @@ class Weather(QWidget):
         self._update_weather_forecast()
 
         logger.info(f'with: {parent.width()}, height: {parent.height()}')
-        self.testUI()
+        # read data
+        self.forecast = get_dict_from_json_file(ConfigWeather.JSON_WEATHER_FORECAST)
+        self.current = get_dict_from_json_file(ConfigWeather.JSON_CURRENT_WEATHER)
+        # define regions
+        self.region_outdoor = self.createRegionOutdoor()
+        self.region_time_date = self.createRegionTimeAndDate()
+        self.region_forecast = self.createRegionForecast()
+        self.region_indoor = self.createRegionIndoor()
+        # update UI
+        self.updateOutdoorUI()
+        self.updateForecastUI()
+        self.updateIndoorUI()
+        self.updateTimeDateUI()
+
+    def updateOutdoorUI(self):
+        logger.info(f'updateOutdoorUI')
+        title = lblHeader("Outdoor", self.region_outdoor)
+        x = self._get_center_x(title, self.region_outdoor.width())
+        title.move(x, 0)
+        # prepare data
+        #weather_text = self.current
+
+    def updateForecastUI(self):
+        title = lblHeader("Forecast", self.region_forecast)
+        x = self._get_center_x(title, self.region_forecast.width())
+        title.move(x, 0)
+
+    def updateTimeDateUI(self):
+        title = lblHeader("Time & Date", self.region_time_date)
+        x = self._get_center_x(title, self.region_time_date.width())
+        title.move(x, 0)
+
+    def updateIndoorUI(self):
+        title = lblHeader("Indoor", self.region_indoor)
+        x = self._get_center_x(title, self.region_indoor.width())
+        title.move(x, 0)
+
+    def _get_center_x(self, text, w):
+        fm = QFontMetrics(text.font())
+        font_width = fm.width(text.text())
+        x = w - font_width
+        return x / 2
 
     def start_threads(self):
         self.thread.signal_msg.connect(self.message_received_cb)
@@ -48,3 +92,45 @@ class Weather(QWidget):
         test.move(0, 0)
         test.setText("alalalal\nkaksksk\tndndnd")
         self.show()
+
+    def createRegionOutdoor(self) -> QFrame:
+        region_outdoor = QFrame(self)
+        region_outdoor.setObjectName(ConfigWeather.REGION_OUTDOOR_NAME)
+
+        region_outdoor.setStyleSheet(ConfigWeather.REGION_OUTDOOR_STYLESHEET)
+        region_outdoor.setGeometry(ConfigWeather.REGION_OUTDOOR_X,
+                                   ConfigWeather.REGION_OUTDOOR_Y,
+                                   ConfigWeather.REGION_OUTDOOR_WIDTH,
+                                   ConfigWeather.REGION_OUTDOOR_HEIGHT)
+        return region_outdoor
+
+    def createRegionTimeAndDate(self) -> QFrame:
+        region_time_date = QFrame(self)
+        region_time_date.setObjectName(ConfigWeather.REGION_TIME_DATE_NAME)
+        region_time_date.setStyleSheet(ConfigWeather.REGION_TIME_DATE_STYLESHEET)
+        region_time_date.setGeometry(ConfigWeather.REGION_TIME_DATE_X,
+                                     ConfigWeather.REGION_TIME_DATE_Y,
+                                     ConfigWeather.REGION_TIME_DATE_WIDTH,
+                                     ConfigWeather.REGION_TIME_DATE_HEIGHT)
+        return region_time_date
+
+    def createRegionForecast(self) -> QFrame:
+        region_forecast = QFrame(self)
+        region_forecast.setObjectName(ConfigWeather.REGION_FORECAST_NAME)
+
+        region_forecast.setStyleSheet(ConfigWeather.REGION_FORECAST_STYLESHEET)
+        region_forecast.setGeometry(ConfigWeather.REGION_FORECAST_X,
+                                    ConfigWeather.REGION_FORECAST_Y,
+                                    ConfigWeather.REGION_FORECAST_WIDTH,
+                                    ConfigWeather.REGION_FORECAST_HEIGHT)
+        return region_forecast
+
+    def createRegionIndoor(self) -> QFrame:
+        region_indoor = QFrame(self)
+        region_indoor.setObjectName(ConfigWeather.REGION_INDOOR_NAME)
+        region_indoor.setStyleSheet(ConfigWeather.REGION_INDOOR_STYLESHEET)
+        region_indoor.setGeometry(ConfigWeather.REGION_INDOOR_X,
+                                  ConfigWeather.REGION_INDOOR_Y,
+                                  ConfigWeather.REGION_INDOOR_WIDTH,
+                                  ConfigWeather.REGION_INDOOR_HEIGHT)
+        return region_indoor
