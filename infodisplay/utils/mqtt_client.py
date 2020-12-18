@@ -22,7 +22,7 @@ class MqttClient:
         logger.info(f'connect returns: {ret}')
 
     def publish(self, topic: str, value: str):
-        logger.info(f'{self.base_topic}/{self.topic}/{topic} -> {value}')
+        #logger.info(f'{self.base_topic}/{self.topic}/{topic} -> {value}')
         self.client.publish(f'{self.base_topic}/{self.topic}/{topic}', value)
         #self.test_mqtt()
 

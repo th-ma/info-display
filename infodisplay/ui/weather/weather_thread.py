@@ -22,7 +22,8 @@ class WeatherDataThread(QThread):
         self.connected = True
 
     def on_message_cb(self, client, userdata, msg):
-        logger.info(f'message received -> topic: {msg.topic}, payload: {str(msg.payload)}')
+        # logger.info(f'message received -> topic: {msg.topic}, payload: {str(msg.payload)}')
+        logger.info(f'message received -> topic: {msg.topic}')
         payload = (msg.payload.decode('utf-8'))
         self._save_received_data_to_file(msg.topic, msg.payload)
         self.signal_msg.emit(msg.topic)
