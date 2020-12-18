@@ -112,8 +112,8 @@ class ConfigWeatherServer:
 ##########################################################################
 # Weather Labels
 ##########################################################################
-HEADER_TEXT_SIZE: int       = 20
-DEFAULT_TEXT_SIZE: int      = 14
+HEADER_TEXT_SIZE: int       = 30
+DEFAULT_TEXT_SIZE: int      = 25
 
 
 class lblHeader(QLabel):
@@ -125,6 +125,7 @@ class lblHeader(QLabel):
     def _setFont(self):
         font = QFont()
         font.setPointSize(HEADER_TEXT_SIZE)
+        font.setBold(True)
         return font
 
 
