@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QHBoxLayout, QVBoxLayout
 from loguru import logger
 
 from configs.config_weather import ConfigWeather, lblHeader, lblText
-from infodisplay.ui.weather.res.weather_outdoor import WeatherOutdoor
+from infodisplay.ui.weather.weather_outdoor import WeatherOutdoor
 from infodisplay.ui.weather.weather_thread import WeatherDataThread
 from infodisplay.utils.file_utils import get_dict_from_json_file
 
