@@ -15,8 +15,8 @@ class ConfigGui:
 
     ''' Background config '''
     BACKGROUND_OBJECT_NAME: str = 'backGround'
-    BACKGROUND_STYLE_SHEET: str = f'#{BACKGROUND_OBJECT_NAME} {{' \
-                                  f' background-color: grey;}}'
+    BACKGROUND_STYLE_SHEET: str = '' #f'#{BACKGROUND_OBJECT_NAME} {{' \
+                                 # f' background-color: grey;}}'
 
     ''' Foreground config'''
     FOREGROUND_OBJECT_NAME: str = 'foreGround'

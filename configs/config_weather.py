@@ -53,9 +53,11 @@ class ConfigWeather:
     REGION_INDOOR_HEIGHT: int   = REGION_OUTDOOR_HEIGHT
 
     # style sheets
+    BACK: str = "infodisplay/ui/weather/res/outdoor_day.jpeg"
     BORDER_RADIUS: str          = '10px'
     REGION_OUTDOOR_STYLESHEET   = f"#{REGION_OUTDOOR_NAME}{{" \
                                 f"border: 1px solid black; " \
+                                f"background-image: url('{BACK}');" \
                                 f"border-radius: {BORDER_RADIUS};}}"
 
     REGION_TIME_DATE_STYLESHEET = f"#{REGION_TIME_DATE_NAME}{{" \
@@ -65,6 +67,7 @@ class ConfigWeather:
     REGION_FORECAST_STYLESHEET  = f"#{REGION_FORECAST_NAME}{{" \
                                 f"border: 1px solid black; " \
                                 f"border-radius: {BORDER_RADIUS};}}"
+
     REGION_INDOOR_STYLESHEET    = f"#{REGION_INDOOR_NAME}{{" \
                                  f"border: 1px solid black; " \
                                  f"border-radius: {BORDER_RADIUS};}}"
@@ -109,7 +112,7 @@ class ConfigWeatherServer:
 ##########################################################################
 # Weather Labels
 ##########################################################################
-HEADER_TEXT_SIZE: int       = 18
+HEADER_TEXT_SIZE: int       = 20
 DEFAULT_TEXT_SIZE: int      = 14
 
 

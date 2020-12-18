@@ -5,6 +5,7 @@ import time
 
 from PyQt5.QtWidgets import QApplication
 from loguru import logger
+from qt_material import apply_stylesheet
 
 from infodisplay.gui import MainWindow
 from infodisplay.server.weatherServer.weather_server import WeatherServer
@@ -22,6 +23,8 @@ def main():
 
 def start_app():
     app = QApplication([])
+    # qt-material style sheet
+    apply_stylesheet(app, theme='dark_teal.xml')
     w = MainWindow()
     w.show()
     app.exec_()
