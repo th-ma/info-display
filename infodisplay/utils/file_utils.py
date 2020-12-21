@@ -22,7 +22,7 @@ def does_file_exist(filename: str) -> bool:
 def file_get_last_modification_date(filename: str):
     file = pathlib.Path(filename)
     modificationTime = datetime.fromtimestamp(file.stat().st_mtime)
-    return modificationTime
+    return str(modificationTime)
 
 
 ####################  JSON ###############################
