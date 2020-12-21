@@ -21,8 +21,8 @@ class ConfigWeather:
     MQTT_TOPIC_CURRENT: str     = 'infoscreens/weather/current'
     MQTT_TOPIC_FORECAST: str    = 'infoscreens/weather/forecast'
     # JSON files used by the UI Application
-    JSON_CURRENT_WEATHER: str = 'infodisplay/ui/weather/res/current_weather.json'
-    JSON_WEATHER_FORECAST: str = 'infodisplay/ui/weather/res/weather_forecast.json'
+    JSON_CURRENT_WEATHER: str   = 'infodisplay/ui/weather/res/current_weather.json'
+    JSON_WEATHER_FORECAST: str  = 'infodisplay/ui/weather/res/weather_forecast.json'
     # Regions
     REGION_BORDER: int          = 10
     REGION_TOP: int             = 0
@@ -87,8 +87,9 @@ class ConfigWeatherServer:
     URL_CURRENT: str                = 'http://dataservice.accuweather.com/currentconditions/v1/176968?apikey=GRwYjHLdIa4q1ryLomhvqNJiKTjfntbs&language=de-De&details=true'
     URL_FORECAST: str               = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/176968?apikey=GRwYjHLdIa4q1ryLomhvqNJiKTjfntbs&language=de-De&details=true&metric=true'
     # timer for update calls to weather provider
-    UPDATE_INTERVAL_CURRENT: int    = 60 * 60 * 1   # 1 hour
+    UPDATE_INTERVAL_CURRENT: int    = 1  # 1 hour
     UPDATE_INTERVAL_FORECAST: int   = 4             # 4 times current then forecast again
+
 
     # Default dict in case no status file is available
     STATUS_DICT = {
