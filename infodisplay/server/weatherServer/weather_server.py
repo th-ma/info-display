@@ -21,14 +21,13 @@ class WeatherServer(threading.Thread):
         self.mqtt_client = MqttClient(ConfigWeather.MQTT_HOST,
                                       ConfigWeather.MQTT_BASE_TOPIC,
                                       ConfigWeather.MQTT_TOPIC)
-        self.update_interval = ConfigWeatherServer.UPDATE_INTERVAL_CURRENT
+        self.update_interval = 60 * 60 * 1
         self.forecast_counter = ConfigWeatherServer.UPDATE_INTERVAL_FORECAST
 
     def run(self):
         while self.run_event.is_set():
             try:
                 logger.info(f'Weather thread (re)started')
-                # device = IDevicePeripheral(self.mac_address, "iGrillv2")
                 accu_weather = AccuWeather()
                 while True:
                     logger.info(f'self.forecast_counter: {self.forecast_counter}')
