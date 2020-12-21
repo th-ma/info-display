@@ -6,7 +6,7 @@ class WeatherObject:
     """ Base Class for all weather objects """
 
     def __init__(self, filename: str, update_cycle: int):
-        self.json_file: str
+        self.json_file: str = filename
         self.last_update: str = ''
         self.update_needed: bool = False
         self.update_cycle: int = update_cycle
