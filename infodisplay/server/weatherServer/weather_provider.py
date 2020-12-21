@@ -49,6 +49,7 @@ class AccuWeather:
         logger.debug(f'--> _update_forecast')
         diff = get_time_diff_from_date_string(self.weather_forecast.last_update)
         logger.debug(f'diff: {diff}, update cycle: {self.weather_forecast.update_cycle}')
+        diff  = 5
         if int(diff) > self.weather_forecast.update_cycle:
             logger.info(f'_update_forecast after {int(diff)} hours')
             logger.info(f'call _fetch_data_from_url ({self.weather_forecast.json_file})')
@@ -61,6 +62,7 @@ class AccuWeather:
         logger.debug(f'--> _update_current_weather')
         diff = get_time_diff_from_date_string(self.current_weather.last_update)
         logger.debug(f'diff: {diff}, update cycle: {self.current_weather.update_cycle}')
+        diff = 5
         if int(diff) > self.current_weather.update_cycle:
             logger.info(f'_update_current_weather after {int(diff)} hours')
             logger.info(f'call _fetch_data_from_url ({self.current_weather.json_file})')
