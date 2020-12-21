@@ -24,6 +24,7 @@ class AccuWeather:
         self.connections_left = -1
 
     def update_weather_data(self):
+        logger.info(f'--> update_weather_data()')
         if not self._check_status_header():
             logger.error(f'status header check failed')
             return
@@ -31,31 +32,36 @@ class AccuWeather:
         self._update_current_weather()
 
     def update_forecast(self):
+        logger.info(f'--> update_forecast()')
         if not self._check_status_header():
             logger.error(f'status header check failed')
             return
         self._update_forecast()
 
     def update_current_weather(self):
+        logger.info(f'--> update_current_weather()')
         if not self._check_status_header():
             logger.error(f'status header check failed')
             return
         self._update_current_weather()
 
     def _update_forecast(self):
-        logger.debug(f'_update_forecast')
+        logger.debug(f'--> _update_forecast')
         diff = get_time_diff_from_date_string(self.weather_forecast.last_update)
         if int(diff) > self.weather_forecast.update_cycle:
             logger.info(f'_update_forecast after {int(diff)} hours')
+            logger.info(f'call _fetch_data_from_url ({self.weather_forecast.json_file})')
             self.connections_left = self._fetch_data_from_url(ConfigWeatherServer.URL_FORECAST,
                                                               self.weather_forecast.json_file)
             self._update_last_connection_counter()
             self.weather_forecast.last_update = file_get_last_modification_date(self.weather_forecast.json_file)
 
     def _update_current_weather(self):
+        logger.debug(f'--> _update_current_weather')
         diff = get_time_diff_from_date_string(self.current_weather.last_update)
         if int(diff) > self.current_weather.update_cycle:
             logger.info(f'_update_current_weather after {int(diff)} hours')
+            logger.info(f'call _fetch_data_from_url ({self.current_weather.json_file})')
             self.connections_left = self._fetch_data_from_url(ConfigWeatherServer.URL_CURRENT,
                                                               self.current_weather.json_file)
             self._update_last_connection_counter()
