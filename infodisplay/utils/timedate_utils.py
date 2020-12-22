@@ -2,11 +2,14 @@
 from datetime import datetime
 
 from dateutil import parser
+from loguru import logger
 
 
 def get_time_diff_from_date_string(date_str: str):
     """ returns the time difference in hours """
+    logger.info(f'get_time_diff_from_date_string(date_str: {date_str})')
     if date_str =='':
+        logger.info(f'date_str  is empty, set now')
         date = datetime.now()
     else:
         date = parser.parse(date_str)

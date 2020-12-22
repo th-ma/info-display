@@ -5,6 +5,8 @@ from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QHBoxLayout, QVBoxLayout
 from loguru import logger
 
 from configs.config_weather import ConfigWeather, lblHeader, lblText
+from infodisplay.ui.weather.poc_layout import WeatherOutdooor
+from infodisplay.ui.weather.weatherOutdoor import WeatherUiOutdoor
 from infodisplay.ui.weather.weather_outdoor import WeatherOutdoor
 from infodisplay.ui.weather.weather_thread import WeatherDataThread
 from infodisplay.utils.file_utils import get_dict_from_json_file
@@ -32,8 +34,12 @@ class Weather(QWidget):
         self.region_forecast = self.createRegionForecast()
         self.region_indoor = self.createRegionIndoor()
         # update UI
-        self.outdoor = WeatherOutdoor(self.region_outdoor)
-        self.outdoor.set_data(self.current)
+        self.outdoor = WeatherOutdooor(self.region_outdoor)
+        self.outdoor.updateData(self.current)
+        #self.outdoor = WeatherOutdoor(self.region_outdoor)
+        #self.outdoor.set_data(self.current)
+
+        #self.w = WeatherUiOutdoor(self.region_outdoor)
     #    self.updateOutdoorUI()
         #self.setOutdoor()
       #  self.updateForecastUI()
@@ -43,7 +49,7 @@ class Weather(QWidget):
     def setOutdoor(self):
         # collect data
         header_txt = f'Außen'
-        current_temp_txt = str(self.current[0]['Temperature']['Metric']['Value']) + '°C'
+        current_temp_txt = str(self.current[0]['WeatherText']) + '°C'
         feel_temperature_txt = str(self.current[0]['RealFeelTemperature']['Metric']['Value']) + '°C'
         humidity_txt = self.current[0]['RelativeHumidity']
         weather_text_txt = self.current[0]['WeatherText']

@@ -1,73 +1,73 @@
 {
     "Headline": {
-        "EffectiveDate": "2020-12-15T19:00:00+01:00",
-        "EffectiveEpochDate": 1608055200,
-        "Severity": 5,
-        "Text": "Voraussichtlich Schauer Dienstagnacht",
+        "EffectiveDate": "2020-12-21T19:00:00+01:00",
+        "EffectiveEpochDate": 1608573600,
+        "Severity": 3,
+        "Text": "Voraussichtlich Regenwetter Montagabend bis Dienstagnachmittag",
         "Category": "rain",
-        "EndDate": "2020-12-16T07:00:00+01:00",
-        "EndEpochDate": 1608098400,
+        "EndDate": "2020-12-22T19:00:00+01:00",
+        "EndEpochDate": 1608660000,
         "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/extended-weather-forecast/176968?unit=c",
         "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?unit=c"
     },
     "DailyForecasts": [
         {
-            "Date": "2020-12-15T07:00:00+01:00",
-            "EpochDate": 1608012000,
+            "Date": "2020-12-21T07:00:00+01:00",
+            "EpochDate": 1608530400,
             "Sun": {
-                "Rise": "2020-12-15T08:05:00+01:00",
-                "EpochRise": 1608015900,
-                "Set": "2020-12-15T16:24:00+01:00",
-                "EpochSet": 1608045840
+                "Rise": "2020-12-21T08:09:00+01:00",
+                "EpochRise": 1608534540,
+                "Set": "2020-12-21T16:26:00+01:00",
+                "EpochSet": 1608564360
             },
             "Moon": {
-                "Rise": "2020-12-15T08:59:00+01:00",
-                "EpochRise": 1608019140,
-                "Set": "2020-12-15T17:06:00+01:00",
-                "EpochSet": 1608048360,
+                "Rise": "2020-12-21T12:38:00+01:00",
+                "EpochRise": 1608550680,
+                "Set": "2020-12-22T00:02:00+01:00",
+                "EpochSet": 1608591720,
                 "Phase": "WaxingCrescent",
-                "Age": 1
+                "Age": 7
             },
             "Temperature": {
                 "Minimum": {
-                    "Value": 4.4,
+                    "Value": 6.5,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 7.7,
+                    "Value": 7.2,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
             "RealFeelTemperature": {
                 "Minimum": {
-                    "Value": 3.2,
+                    "Value": 2.5,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 8.3,
+                    "Value": 6.6,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
             "RealFeelTemperatureShade": {
                 "Minimum": {
-                    "Value": 3.2,
+                    "Value": 2.5,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 8.3,
+                    "Value": 6.6,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
-            "HoursOfSun": 2.1,
+            "HoursOfSun": 1.4,
             "DegreeDaySummary": {
                 "Heating": {
-                    "Value": 12.0,
+                    "Value": 11.0,
                     "Unit": "C",
                     "UnitType": 17
                 },
@@ -80,7 +80,7 @@
             "AirAndPollen": [
                 {
                     "Name": "AirQuality",
-                    "Value": 33,
+                    "Value": 24,
                     "Category": "Gut",
                     "CategoryValue": 1,
                     "Type": "Feinstaub"
@@ -111,21 +111,21 @@
                 },
                 {
                     "Name": "UVIndex",
-                    "Value": 1,
+                    "Value": 0,
                     "Category": "Niedrig",
                     "CategoryValue": 1
                 }
             ],
             "Day": {
-                "Icon": 6,
-                "IconPhrase": "Stark bewölkt",
+                "Icon": 7,
+                "IconPhrase": "Wolkig",
                 "HasPrecipitation": false,
-                "ShortPhrase": "Überwiegend bewölkt",
-                "LongPhrase": "Überwiegend bewölkt",
+                "ShortPhrase": "Erhebliche Bewölkung",
+                "LongPhrase": "Erhebliche Bewölkung",
                 "PrecipitationProbability": 25,
-                "ThunderstormProbability": 0,
+                "ThunderstormProbability": 20,
                 "RainProbability": 25,
-                "SnowProbability": 0,
+                "SnowProbability": 1,
                 "IceProbability": 0,
                 "Wind": {
                     "Speed": {
@@ -134,9 +134,9 @@
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 211,
-                        "Localized": "SSW",
-                        "English": "SSW"
+                        "Degrees": 173,
+                        "Localized": "S",
+                        "English": "S"
                     }
                 },
                 "WindGust": {
@@ -146,7 +146,7 @@
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 222,
+                        "Degrees": 216,
                         "Localized": "SW",
                         "English": "SW"
                     }
@@ -175,490 +175,24 @@
                 "HoursOfRain": 0.0,
                 "HoursOfSnow": 0.0,
                 "HoursOfIce": 0.0,
-                "CloudCover": 92
+                "CloudCover": 96
             },
             "Night": {
-                "Icon": 12,
-                "IconPhrase": "Schauer",
+                "Icon": 18,
+                "IconPhrase": "Regen",
                 "HasPrecipitation": true,
                 "PrecipitationType": "Rain",
                 "PrecipitationIntensity": "Light",
-                "ShortPhrase": "Wolkig, Nieselregen",
-                "LongPhrase": "Wolkig, Nieselregen",
-                "PrecipitationProbability": 56,
-                "ThunderstormProbability": 20,
-                "RainProbability": 56,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 5.6,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 239,
-                        "Localized": "WSW",
-                        "English": "WSW"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 11.1,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 220,
-                        "Localized": "SW",
-                        "English": "SW"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 1.5,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 1.5,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 2.0,
-                "HoursOfRain": 2.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 95
-            },
-            "Sources": [
-                "AccuWeather"
-            ],
-            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=1&unit=c",
-            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=1&unit=c"
-        },
-        {
-            "Date": "2020-12-16T07:00:00+01:00",
-            "EpochDate": 1608098400,
-            "Sun": {
-                "Rise": "2020-12-16T08:06:00+01:00",
-                "EpochRise": 1608102360,
-                "Set": "2020-12-16T16:24:00+01:00",
-                "EpochSet": 1608132240
-            },
-            "Moon": {
-                "Rise": "2020-12-16T10:01:00+01:00",
-                "EpochRise": 1608109260,
-                "Set": "2020-12-16T18:09:00+01:00",
-                "EpochSet": 1608138540,
-                "Phase": "WaxingCrescent",
-                "Age": 2
-            },
-            "Temperature": {
-                "Minimum": {
-                    "Value": 2.7,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 7.3,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperature": {
-                "Minimum": {
-                    "Value": 3.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 9.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperatureShade": {
-                "Minimum": {
-                    "Value": 3.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 7.7,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "HoursOfSun": 3.3,
-            "DegreeDaySummary": {
-                "Heating": {
-                    "Value": 13.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Cooling": {
-                    "Value": 0.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "AirAndPollen": [
-                {
-                    "Name": "AirQuality",
-                    "Value": 38,
-                    "Category": "Gut",
-                    "CategoryValue": 1,
-                    "Type": "Feinstaub"
-                },
-                {
-                    "Name": "Grass",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Mold",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Ragweed",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Tree",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "UVIndex",
-                    "Value": 1,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                }
-            ],
-            "Day": {
-                "Icon": 4,
-                "IconPhrase": "Heiter bis wolkig",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Wolken und Sonne",
-                "LongPhrase": "Wolken und Sonne",
-                "PrecipitationProbability": 25,
+                "ShortPhrase": "Gelegentlich Regen",
+                "LongPhrase": "Gelegentlich Regen",
+                "PrecipitationProbability": 66,
                 "ThunderstormProbability": 0,
-                "RainProbability": 25,
+                "RainProbability": 66,
                 "SnowProbability": 0,
                 "IceProbability": 0,
                 "Wind": {
                     "Speed": {
-                        "Value": 5.6,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 118,
-                        "Localized": "OSO",
-                        "English": "ESE"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 9.3,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 98,
-                        "Localized": "O",
-                        "English": "E"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 59
-            },
-            "Night": {
-                "Icon": 38,
-                "IconPhrase": "Stark bewölkt",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Verdichtende Wolken",
-                "LongPhrase": "Verdichtende Wolken",
-                "PrecipitationProbability": 10,
-                "ThunderstormProbability": 0,
-                "RainProbability": 10,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 5.6,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 98,
-                        "Localized": "O",
-                        "English": "E"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 9.3,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 88,
-                        "Localized": "O",
-                        "English": "E"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 58
-            },
-            "Sources": [
-                "AccuWeather"
-            ],
-            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=2&unit=c",
-            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=2&unit=c"
-        },
-        {
-            "Date": "2020-12-17T07:00:00+01:00",
-            "EpochDate": 1608184800,
-            "Sun": {
-                "Rise": "2020-12-17T08:06:00+01:00",
-                "EpochRise": 1608188760,
-                "Set": "2020-12-17T16:24:00+01:00",
-                "EpochSet": 1608218640
-            },
-            "Moon": {
-                "Rise": "2020-12-17T10:50:00+01:00",
-                "EpochRise": 1608198600,
-                "Set": "2020-12-17T19:21:00+01:00",
-                "EpochSet": 1608229260,
-                "Phase": "WaxingCrescent",
-                "Age": 3
-            },
-            "Temperature": {
-                "Minimum": {
-                    "Value": 2.3,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 8.4,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperature": {
-                "Minimum": {
-                    "Value": 4.6,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 7.9,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperatureShade": {
-                "Minimum": {
-                    "Value": 4.6,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 7.9,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "HoursOfSun": 3.0,
-            "DegreeDaySummary": {
-                "Heating": {
-                    "Value": 13.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Cooling": {
-                    "Value": 0.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "AirAndPollen": [
-                {
-                    "Name": "AirQuality",
-                    "Value": 16,
-                    "Category": "Gut",
-                    "CategoryValue": 1,
-                    "Type": "Feinstaub"
-                },
-                {
-                    "Name": "Grass",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Mold",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Ragweed",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Tree",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "UVIndex",
-                    "Value": 1,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                }
-            ],
-            "Day": {
-                "Icon": 6,
-                "IconPhrase": "Stark bewölkt",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Überwiegend bewölkt",
-                "LongPhrase": "Überwiegend bewölkt",
-                "PrecipitationProbability": 25,
-                "ThunderstormProbability": 0,
-                "RainProbability": 25,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 9.3,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 232,
-                        "Localized": "SW",
-                        "English": "SW"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 13.0,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 239,
-                        "Localized": "WSW",
-                        "English": "WSW"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 79
-            },
-            "Night": {
-                "Icon": 36,
-                "IconPhrase": "Heiter bis wolkig",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Aufklarend",
-                "LongPhrase": "Aufklarend",
-                "PrecipitationProbability": 13,
-                "ThunderstormProbability": 0,
-                "RainProbability": 13,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 5.6,
+                        "Value": 14.8,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
@@ -670,23 +204,23 @@
                 },
                 "WindGust": {
                     "Speed": {
-                        "Value": 9.3,
+                        "Value": 27.8,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 229,
-                        "Localized": "SW",
-                        "English": "SW"
+                        "Degrees": 237,
+                        "Localized": "WSW",
+                        "English": "WSW"
                     }
                 },
                 "TotalLiquid": {
-                    "Value": 0.0,
+                    "Value": 6.8,
                     "Unit": "mm",
                     "UnitType": 3
                 },
                 "Rain": {
-                    "Value": 0.0,
+                    "Value": 6.8,
                     "Unit": "mm",
                     "UnitType": 3
                 },
@@ -700,75 +234,75 @@
                     "Unit": "mm",
                     "UnitType": 3
                 },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
+                "HoursOfPrecipitation": 3.5,
+                "HoursOfRain": 3.5,
                 "HoursOfSnow": 0.0,
                 "HoursOfIce": 0.0,
-                "CloudCover": 33
+                "CloudCover": 98
             },
             "Sources": [
                 "AccuWeather"
             ],
-            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=3&unit=c",
-            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=3&unit=c"
+            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=1&unit=c",
+            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=1&unit=c"
         },
         {
-            "Date": "2020-12-18T07:00:00+01:00",
-            "EpochDate": 1608271200,
+            "Date": "2020-12-22T07:00:00+01:00",
+            "EpochDate": 1608616800,
             "Sun": {
-                "Rise": "2020-12-18T08:07:00+01:00",
-                "EpochRise": 1608275220,
-                "Set": "2020-12-18T16:25:00+01:00",
-                "EpochSet": 1608305100
+                "Rise": "2020-12-22T08:09:00+01:00",
+                "EpochRise": 1608620940,
+                "Set": "2020-12-22T16:27:00+01:00",
+                "EpochSet": 1608650820
             },
             "Moon": {
-                "Rise": "2020-12-18T11:27:00+01:00",
-                "EpochRise": 1608287220,
-                "Set": "2020-12-18T20:33:00+01:00",
-                "EpochSet": 1608319980,
-                "Phase": "WaxingCrescent",
-                "Age": 4
+                "Rise": "2020-12-22T12:55:00+01:00",
+                "EpochRise": 1608638100,
+                "Set": "2020-12-23T01:07:00+01:00",
+                "EpochSet": 1608682020,
+                "Phase": "First",
+                "Age": 8
             },
             "Temperature": {
                 "Minimum": {
-                    "Value": 2.3,
+                    "Value": 9.7,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 8.2,
+                    "Value": 11.5,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
             "RealFeelTemperature": {
                 "Minimum": {
-                    "Value": 3.3,
+                    "Value": 7.7,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 8.6,
+                    "Value": 8.9,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
             "RealFeelTemperatureShade": {
                 "Minimum": {
-                    "Value": 3.3,
+                    "Value": 7.7,
                     "Unit": "C",
                     "UnitType": 17
                 },
                 "Maximum": {
-                    "Value": 8.6,
+                    "Value": 8.9,
                     "Unit": "C",
                     "UnitType": 17
                 }
             },
-            "HoursOfSun": 7.6,
+            "HoursOfSun": 2.5,
             "DegreeDaySummary": {
                 "Heating": {
-                    "Value": 13.0,
+                    "Value": 7.0,
                     "Unit": "C",
                     "UnitType": 17
                 },
@@ -781,240 +315,7 @@
             "AirAndPollen": [
                 {
                     "Name": "AirQuality",
-                    "Value": 20,
-                    "Category": "Gut",
-                    "CategoryValue": 1,
-                    "Type": "Feinstaub"
-                },
-                {
-                    "Name": "Grass",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Mold",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Ragweed",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "Tree",
-                    "Value": 0,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                },
-                {
-                    "Name": "UVIndex",
-                    "Value": 2,
-                    "Category": "Niedrig",
-                    "CategoryValue": 1
-                }
-            ],
-            "Day": {
-                "Icon": 1,
-                "IconPhrase": "Sonnig",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Sonnenschein",
-                "LongPhrase": "Sonnenschein",
-                "PrecipitationProbability": 2,
-                "ThunderstormProbability": 0,
-                "RainProbability": 2,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 3.7,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 141,
-                        "Localized": "SO",
-                        "English": "SE"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 7.4,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 99,
-                        "Localized": "O",
-                        "English": "E"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 8
-            },
-            "Night": {
-                "Icon": 38,
-                "IconPhrase": "Stark bewölkt",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Überwiegend bewölkt",
-                "LongPhrase": "Überwiegend bewölkt",
-                "PrecipitationProbability": 1,
-                "ThunderstormProbability": 0,
-                "RainProbability": 1,
-                "SnowProbability": 0,
-                "IceProbability": 0,
-                "Wind": {
-                    "Speed": {
-                        "Value": 3.7,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 150,
-                        "Localized": "SSO",
-                        "English": "SSE"
-                    }
-                },
-                "WindGust": {
-                    "Speed": {
-                        "Value": 7.4,
-                        "Unit": "km/h",
-                        "UnitType": 7
-                    },
-                    "Direction": {
-                        "Degrees": 195,
-                        "Localized": "SSW",
-                        "English": "SSW"
-                    }
-                },
-                "TotalLiquid": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Rain": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "Snow": {
-                    "Value": 0.0,
-                    "Unit": "cm",
-                    "UnitType": 4
-                },
-                "Ice": {
-                    "Value": 0.0,
-                    "Unit": "mm",
-                    "UnitType": 3
-                },
-                "HoursOfPrecipitation": 0.0,
-                "HoursOfRain": 0.0,
-                "HoursOfSnow": 0.0,
-                "HoursOfIce": 0.0,
-                "CloudCover": 75
-            },
-            "Sources": [
-                "AccuWeather"
-            ],
-            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=4&unit=c",
-            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=4&unit=c"
-        },
-        {
-            "Date": "2020-12-19T07:00:00+01:00",
-            "EpochDate": 1608357600,
-            "Sun": {
-                "Rise": "2020-12-19T08:08:00+01:00",
-                "EpochRise": 1608361680,
-                "Set": "2020-12-19T16:25:00+01:00",
-                "EpochSet": 1608391500
-            },
-            "Moon": {
-                "Rise": "2020-12-19T11:56:00+01:00",
-                "EpochRise": 1608375360,
-                "Set": "2020-12-19T21:46:00+01:00",
-                "EpochSet": 1608410760,
-                "Phase": "WaxingCrescent",
-                "Age": 5
-            },
-            "Temperature": {
-                "Minimum": {
-                    "Value": 2.5,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 8.7,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperature": {
-                "Minimum": {
-                    "Value": 3.1,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 9.1,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "RealFeelTemperatureShade": {
-                "Minimum": {
-                    "Value": 3.1,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Maximum": {
-                    "Value": 9.1,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "HoursOfSun": 5.2,
-            "DegreeDaySummary": {
-                "Heating": {
-                    "Value": 12.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                },
-                "Cooling": {
-                    "Value": 0.0,
-                    "Unit": "C",
-                    "UnitType": 17
-                }
-            },
-            "AirAndPollen": [
-                {
-                    "Name": "AirQuality",
-                    "Value": 0,
+                    "Value": 13,
                     "Category": "Gut",
                     "CategoryValue": 1,
                     "Type": "Ozon"
@@ -1045,44 +346,107 @@
                 },
                 {
                     "Name": "UVIndex",
-                    "Value": 2,
+                    "Value": 1,
                     "Category": "Niedrig",
                     "CategoryValue": 1
                 }
             ],
             "Day": {
-                "Icon": 3,
-                "IconPhrase": "Teils sonnig",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Anhaltender Sonnenschein",
-                "LongPhrase": "Anhaltender Sonnenschein",
-                "PrecipitationProbability": 1,
+                "Icon": 12,
+                "IconPhrase": "Schauer",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "Zeitweise Regen",
+                "LongPhrase": "Überwiegend bewölkt, Nieselregen; mild",
+                "PrecipitationProbability": 58,
                 "ThunderstormProbability": 0,
-                "RainProbability": 1,
+                "RainProbability": 58,
                 "SnowProbability": 0,
                 "IceProbability": 0,
                 "Wind": {
                     "Speed": {
-                        "Value": 5.6,
+                        "Value": 16.7,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 135,
-                        "Localized": "SO",
-                        "English": "SE"
+                        "Degrees": 238,
+                        "Localized": "WSW",
+                        "English": "WSW"
                     }
                 },
                 "WindGust": {
                     "Speed": {
-                        "Value": 7.4,
+                        "Value": 25.9,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 194,
-                        "Localized": "SSW",
-                        "English": "SSW"
+                        "Degrees": 236,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 2.2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 2.2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0.0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 2.0,
+                "HoursOfRain": 2.0,
+                "HoursOfSnow": 0.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 87
+            },
+            "Night": {
+                "Icon": 38,
+                "IconPhrase": "Stark bewölkt",
+                "HasPrecipitation": false,
+                "ShortPhrase": "Meist wolkig und mild",
+                "LongPhrase": "Meist wolkig und mild",
+                "PrecipitationProbability": 25,
+                "ThunderstormProbability": 5,
+                "RainProbability": 24,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 13.0,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 228,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 18.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 227,
+                        "Localized": "SW",
+                        "English": "SW"
                     }
                 },
                 "TotalLiquid": {
@@ -1109,41 +473,689 @@
                 "HoursOfRain": 0.0,
                 "HoursOfSnow": 0.0,
                 "HoursOfIce": 0.0,
-                "CloudCover": 44
+                "CloudCover": 82
             },
-            "Night": {
-                "Icon": 38,
-                "IconPhrase": "Stark bewölkt",
-                "HasPrecipitation": false,
-                "ShortPhrase": "Zunehmende Bewölkung",
-                "LongPhrase": "Zunehmende Bewölkung",
-                "PrecipitationProbability": 25,
-                "ThunderstormProbability": 0,
-                "RainProbability": 25,
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=2&unit=c",
+            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=2&unit=c"
+        },
+        {
+            "Date": "2020-12-23T07:00:00+01:00",
+            "EpochDate": 1608703200,
+            "Sun": {
+                "Rise": "2020-12-23T08:09:00+01:00",
+                "EpochRise": 1608707340,
+                "Set": "2020-12-23T16:27:00+01:00",
+                "EpochSet": 1608737220
+            },
+            "Moon": {
+                "Rise": "2020-12-23T13:12:00+01:00",
+                "EpochRise": 1608725520,
+                "Set": "2020-12-24T02:12:00+01:00",
+                "EpochSet": 1608772320,
+                "Phase": "WaxingGibbous",
+                "Age": 9
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 9.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 12.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": 5.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 11.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": 5.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 11.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 1.4,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 7.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 12,
+                    "Category": "Gut",
+                    "CategoryValue": 1,
+                    "Type": "Ozon"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 1,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                }
+            ],
+            "Day": {
+                "Icon": 12,
+                "IconPhrase": "Schauer",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "Überwiegend bewölkt, Schauer",
+                "LongPhrase": "Überwiegend bewölkt, mild und möglicherweise Schauer",
+                "PrecipitationProbability": 57,
+                "ThunderstormProbability": 20,
+                "RainProbability": 57,
                 "SnowProbability": 0,
                 "IceProbability": 0,
                 "Wind": {
                     "Speed": {
-                        "Value": 3.7,
+                        "Value": 11.1,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 166,
-                        "Localized": "SSO",
-                        "English": "SSE"
+                        "Degrees": 227,
+                        "Localized": "SW",
+                        "English": "SW"
                     }
                 },
                 "WindGust": {
+                    "Speed": {
+                        "Value": 16.7,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 228,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 2.9,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 2.9,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0.0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 1.5,
+                "HoursOfRain": 1.5,
+                "HoursOfSnow": 0.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 97
+            },
+            "Night": {
+                "Icon": 12,
+                "IconPhrase": "Schauer",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "Regen",
+                "LongPhrase": "Abends gelegentlich Regen und Nieselregen, sonst wolkig und mild",
+                "PrecipitationProbability": 88,
+                "ThunderstormProbability": 7,
+                "RainProbability": 88,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 14.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 227,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 20.4,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 224,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 6.2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 6.2,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0.0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 2.5,
+                "HoursOfRain": 2.5,
+                "HoursOfSnow": 0.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 99
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=3&unit=c",
+            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=3&unit=c"
+        },
+        {
+            "Date": "2020-12-24T07:00:00+01:00",
+            "EpochDate": 1608789600,
+            "Sun": {
+                "Rise": "2020-12-24T08:10:00+01:00",
+                "EpochRise": 1608793800,
+                "Set": "2020-12-24T16:28:00+01:00",
+                "EpochSet": 1608823680
+            },
+            "Moon": {
+                "Rise": "2020-12-24T13:30:00+01:00",
+                "EpochRise": 1608813000,
+                "Set": "2020-12-25T03:17:00+01:00",
+                "EpochSet": 1608862620,
+                "Phase": "WaxingGibbous",
+                "Age": 10
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": 1.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 9.9,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": -4.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 6.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": -4.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 6.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 2.0,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 12.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 16,
+                    "Category": "Gut",
+                    "CategoryValue": 1,
+                    "Type": "Ozon"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 1,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                }
+            ],
+            "Day": {
+                "Icon": 18,
+                "IconPhrase": "Regen",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "Regen; mild",
+                "LongPhrase": "Regen; mild",
+                "PrecipitationProbability": 65,
+                "ThunderstormProbability": 13,
+                "RainProbability": 65,
+                "SnowProbability": 0,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 18.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 250,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 31.5,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 258,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 6.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 6.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0.0,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 3.5,
+                "HoursOfRain": 3.5,
+                "HoursOfSnow": 0.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 92
+            },
+            "Night": {
+                "Icon": 29,
+                "IconPhrase": "Regen und Schnee",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Mixed",
+                "PrecipitationIntensity": "Moderate",
+                "ShortPhrase": "Matschig, 2-4 cm",
+                "LongPhrase": "Perioden von Regen, dann Schnee, Bildung von 2-4 cm",
+                "PrecipitationProbability": 63,
+                "ThunderstormProbability": 20,
+                "RainProbability": 57,
+                "SnowProbability": 56,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 14.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 288,
+                        "Localized": "WNW",
+                        "English": "WNW"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 27.8,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 254,
+                        "Localized": "WSW",
+                        "English": "WSW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 11.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 5.8,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 3.25,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 6.0,
+                "HoursOfRain": 3.0,
+                "HoursOfSnow": 4.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 85
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=4&unit=c",
+            "Link": "http://www.accuweather.com/de/de/sontheim/89567/daily-weather-forecast/176968?day=4&unit=c"
+        },
+        {
+            "Date": "2020-12-25T07:00:00+01:00",
+            "EpochDate": 1608876000,
+            "Sun": {
+                "Rise": "2020-12-25T08:10:00+01:00",
+                "EpochRise": 1608880200,
+                "Set": "2020-12-25T16:29:00+01:00",
+                "EpochSet": 1608910140
+            },
+            "Moon": {
+                "Rise": "2020-12-25T13:48:00+01:00",
+                "EpochRise": 1608900480,
+                "Set": "2020-12-26T04:22:00+01:00",
+                "EpochSet": 1608952920,
+                "Phase": "WaxingGibbous",
+                "Age": 11
+            },
+            "Temperature": {
+                "Minimum": {
+                    "Value": -4.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 1.6,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperature": {
+                "Minimum": {
+                    "Value": -6.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": -0.2,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "RealFeelTemperatureShade": {
+                "Minimum": {
+                    "Value": -6.1,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": -0.2,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "HoursOfSun": 2.7,
+            "DegreeDaySummary": {
+                "Heating": {
+                    "Value": 19.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Cooling": {
+                    "Value": 0.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "AirAndPollen": [
+                {
+                    "Name": "AirQuality",
+                    "Value": 13,
+                    "Category": "Gut",
+                    "CategoryValue": 1,
+                    "Type": "Ozon"
+                },
+                {
+                    "Name": "Grass",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Mold",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Ragweed",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "Tree",
+                    "Value": 0,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                },
+                {
+                    "Name": "UVIndex",
+                    "Value": 1,
+                    "Category": "Niedrig",
+                    "CategoryValue": 1
+                }
+            ],
+            "Day": {
+                "Icon": 29,
+                "IconPhrase": "Regen und Schnee",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Mixed",
+                "PrecipitationIntensity": "Light",
+                "ShortPhrase": "Leichter Schneefall und Regen",
+                "LongPhrase": "Leichter Schneefall und Regen; kälter",
+                "PrecipitationProbability": 59,
+                "ThunderstormProbability": 20,
+                "RainProbability": 57,
+                "SnowProbability": 52,
+                "IceProbability": 0,
+                "Wind": {
                     "Speed": {
                         "Value": 9.3,
                         "Unit": "km/h",
                         "UnitType": 7
                     },
                     "Direction": {
-                        "Degrees": 103,
-                        "Localized": "OSO",
-                        "English": "ESE"
+                        "Degrees": 267,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 16.7,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 236,
+                        "Localized": "SW",
+                        "English": "SW"
+                    }
+                },
+                "TotalLiquid": {
+                    "Value": 1.9,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Rain": {
+                    "Value": 1.5,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "Snow": {
+                    "Value": 0.33,
+                    "Unit": "cm",
+                    "UnitType": 4
+                },
+                "Ice": {
+                    "Value": 0.0,
+                    "Unit": "mm",
+                    "UnitType": 3
+                },
+                "HoursOfPrecipitation": 3.5,
+                "HoursOfRain": 2.0,
+                "HoursOfSnow": 3.0,
+                "HoursOfIce": 0.0,
+                "CloudCover": 80
+            },
+            "Night": {
+                "Icon": 34,
+                "IconPhrase": "Vielfach klar",
+                "HasPrecipitation": false,
+                "ShortPhrase": "Überwiegend klar und kalt",
+                "LongPhrase": "Überwiegend klar und kalt",
+                "PrecipitationProbability": 16,
+                "ThunderstormProbability": 0,
+                "RainProbability": 0,
+                "SnowProbability": 16,
+                "IceProbability": 0,
+                "Wind": {
+                    "Speed": {
+                        "Value": 9.3,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 269,
+                        "Localized": "W",
+                        "English": "W"
+                    }
+                },
+                "WindGust": {
+                    "Speed": {
+                        "Value": 13.0,
+                        "Unit": "km/h",
+                        "UnitType": 7
+                    },
+                    "Direction": {
+                        "Degrees": 235,
+                        "Localized": "SW",
+                        "English": "SW"
                     }
                 },
                 "TotalLiquid": {
@@ -1170,7 +1182,7 @@
                 "HoursOfRain": 0.0,
                 "HoursOfSnow": 0.0,
                 "HoursOfIce": 0.0,
-                "CloudCover": 67
+                "CloudCover": 21
             },
             "Sources": [
                 "AccuWeather"

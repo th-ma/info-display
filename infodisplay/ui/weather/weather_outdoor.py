@@ -27,9 +27,9 @@ class WeatherOutdoor(QWidget):
 
     def setHumidityData(self):
         layout = QHBoxLayout(self.regionHumidity)
-        #h_icon = self._get_icon('infodisplay/ui/weather/res/humi.svg', self.regionHumidity)
+        h_icon = self._get_icon('infodisplay/ui/weather/res/humidity.svg', self.regionHumidity)
         h_text = str(self.weather_data[0]['RelativeHumidity']) + ' %'
-        layout.addWidget(lblText("Luftfe."))
+        layout.addWidget(h_icon)
         layout.addStretch(1)
         layout.addWidget(lblText(h_text))
         layout.addStretch(2)
@@ -91,7 +91,7 @@ class WeatherOutdoor(QWidget):
     def _setHumidityRegion(self):
         regionHumidity = QFrame(self)
         regionHumidity.setGeometry(0, self.regionCurrent.height() + self.regionTemperature.height(),
-                                   self.parent().width(), 40)
+                                   self.parent().width(), 50)
         regionHumidity.setObjectName("rhum")
         style = '#rhum {border: 0px solid black; background-color: transparent;}'
         regionHumidity.setStyleSheet(style)
