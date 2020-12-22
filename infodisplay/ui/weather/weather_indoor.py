@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-from PyQt5.QtWidgets import QWidget, QApplication
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QWidget, QApplication, QGridLayout
+
+from configs.config_weather import lblHeader
 
 WI: int = 300
 HI: int = 198
@@ -14,6 +17,16 @@ class WeatherIndoor(QWidget):
         else:
             self.setGeometry(100, 100, WI, HI)
             self.setFixedSize(WI, HI)
+
+        self.lblHead = lblHeader('Indoor')
+
+        self.initUI()
+
+
+    def initUI(self):
+        layout = QGridLayout()
+        layout.addWidget(self.lblHead, 0,0, Qt.AlignTop | Qt.AlignHCenter)
+        self.setLayout(layout)
 
 
 

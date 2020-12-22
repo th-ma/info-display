@@ -6,6 +6,7 @@ from loguru import logger
 
 from configs.config_weather import ConfigWeather, lblHeader, lblText
 from infodisplay.ui.weather.weather_forecast import WeatherForecast
+from infodisplay.ui.weather.weather_indoor import WeatherIndoor
 from infodisplay.ui.weather.weather_outdoor import WeatherOutdooor
 
 from infodisplay.ui.weather.weather_thread import WeatherDataThread
@@ -35,6 +36,7 @@ class Weather(QWidget):
         self.outdoor_ui = WeatherOutdooor(self.region_outdoor)
         self.forecast_ui = WeatherForecast(self.region_forecast)
         self.time_date_ui = WeatherTimeDate(self.region_time_date)
+        self.indoor_ui = WeatherIndoor(self.region_indoor)
 
         self._update_current_weather()
         self._update_weather_forecast()
