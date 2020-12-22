@@ -5,9 +5,11 @@ from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QHBoxLayout, QVBoxLayout
 from loguru import logger
 
 from configs.config_weather import ConfigWeather, lblHeader, lblText
+from infodisplay.ui.weather.weather_forecast import WeatherForecast
 from infodisplay.ui.weather.weather_outdoor import WeatherOutdooor
 
 from infodisplay.ui.weather.weather_thread import WeatherDataThread
+from infodisplay.ui.weather.weather_time_date import WeatherTimeDate
 from infodisplay.utils.file_utils import get_dict_from_json_file
 
 
@@ -30,10 +32,14 @@ class Weather(QWidget):
         self.region_forecast = self.createRegionForecast()
         self.region_indoor = self.createRegionIndoor()
         # update UI
-        self.outdoor = WeatherOutdooor(self.region_outdoor)
+        self.outdoor_ui = WeatherOutdooor(self.region_outdoor)
+        self.forecast_ui = WeatherForecast(self.region_forecast)
+        self.time_date_ui = WeatherTimeDate(self.region_time_date)
 
         self._update_current_weather()
         self._update_weather_forecast()
+
+        logger.info(f'w: {self.region_time_date.width()}, h: {self.region_time_date.height()}')
 
     def _get_center_x(self, text, w):
         fm = QFontMetrics(text.font())
@@ -58,7 +64,7 @@ class Weather(QWidget):
     def _update_current_weather(self):
         logger.info(f'_update_current_weather')
         self.current = get_dict_from_json_file(ConfigWeather.JSON_CURRENT_WEATHER)
-        self.outdoor.updateData(self.current)
+        self.outdoor_ui.updateData(self.current)
 
     def _update_weather_forecast(self):
         logger.info(f'_update_weather_forecast')
