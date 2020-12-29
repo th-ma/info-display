@@ -2,6 +2,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QLabel, QHBoxLayout, QVBoxLayout
+from loguru import logger
 
 from configs.config_weather import lblText
 
@@ -20,6 +21,7 @@ class WeatherForecast(QWidget):
             self.setFixedSize(WI, HI)
         # define labels
         self.lblText = lblText('Voraussichtlich Scheißwetter Montagabend bis Dienstagnachmittag')
+        self.lblText.setFixedHeight(25)
         # day 0 - today
         self.lblDate_day0 = QLabel('01.01.20')
         self.lblMax_day0 = QLabel('22°C')
@@ -53,7 +55,13 @@ class WeatherForecast(QWidget):
         self.lblSunHours_day3 = QLabel('0h')
         self.lblPrecipitation_day3 = QLabel('1h')
 
-        self.init2UI()
+        self.initUIPP()
+
+
+    def initUIPP(self):
+        width = self.parent().width()
+        height  = self.parent().height()
+        logger.info(f'w: {width}, h: {height}')
 
     def initUI(self):
         layout = QGridLayout()
@@ -81,9 +89,13 @@ class WeatherForecast(QWidget):
 
     def init2UI(self):
         layout = QVBoxLayout()
-        layout.addWidget(self.lblText, 0, Qt.AlignTop | Qt.AlignHCenter)
+        layout.setSpacing(0)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.addWidget(self.lblText, -1, Qt.AlignTop | Qt.AlignHCenter)
 
         hcontainer = QHBoxLayout()
+        hcontainer.setSpacing(0)
+        hcontainer.setContentsMargins(0, 0, 0, 0)
 
         day0_layout = QVBoxLayout()
         day0_layout.addWidget(self.lblDate_day0)
@@ -113,6 +125,7 @@ class WeatherForecast(QWidget):
         hcontainer.addLayout(day1_layout)
         hcontainer.addLayout(day2_layout)
         hcontainer.addLayout(day3_layout)
+
         layout.addLayout(hcontainer)
         self.setLayout(layout)
 
